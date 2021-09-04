@@ -1,12 +1,7 @@
 import abc # abstract base classes
 
 class EventBridgeInputConcatenator(metaclass=abc.ABCMeta):
-    """
-    Rule Target Adding Strategy - ConcatInputJson
-    defines a abstract base for defining custom logics for constant json data saved on the EventBridge rule. 
-    
-    Rule Target Adding Strategy - ConcurrentLambdaCalls
-    """
+
     @abc.abstractmethod
     def concatenate_inputs(self, existing_data, new_data):
         """concatenate existing data on the EventBridge Rule with the new data."""
