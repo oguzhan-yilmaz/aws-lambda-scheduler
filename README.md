@@ -51,7 +51,7 @@ Rules `schedule` can be fixed rate of minutes, or a cron job schedule expression
 | RULE_PREFIX | AUTO_ | EventBridge Rule names will be prefixed with this value. Please be careful to have this value constant from the start or _expired rule deletion_ will not function properly as it depends on the prefixes. |
 
 
-## Optimizations
+## [Optional] Optimizations
 
 `aws-lambda-scheduler` optimizations can be enabled if the specified lambda invocation times **do not have to be punctual.** 
 
